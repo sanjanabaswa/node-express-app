@@ -19,6 +19,9 @@ app.get('/big',  (req, res) =>{
 app.get('/greeting/:id',  (req, res) =>{
   res.send('Hello! The id was ' + req.params.id)
 })
+app.get(/.*sanjana$/, function (req, res) {
+  res.send('/.*hi i am sanjana $/')
+})
 
 app.get('/yo/:buddy',  (req, res) =>{
   res.send('<h1>Yo, ' + req.params.buddy + '!</h1>')
